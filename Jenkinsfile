@@ -9,7 +9,12 @@ pipeline {
                 bat 'node --version'
                 bat 'npm install -g @angular/cli'
                 bat 'npm run ng -- build'
+                  }
         }
-    }
-}
+        stage('Test') { 
+            steps {
+                bat 'npm test' 
+            }
+        }
+   }
 }
