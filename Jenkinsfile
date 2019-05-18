@@ -8,7 +8,6 @@ pipeline {
                 bat 'npm --version'
                 bat 'node --version'
                 bat 'npm install -g @angular/cli'
-                bat 'ng serve'
         }
     }
 }
