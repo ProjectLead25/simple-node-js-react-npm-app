@@ -11,10 +11,10 @@ pipeline {
                 bat 'npm run ng -- build'
                   }
         }
-        stage('Test') { 
-            steps {
-                bat 'npm test' 
-            }
-        }
+        //stage('Test') { 
+          //  steps {
+            //    bat 'npm test' 
+            //}
+        //}
    }
 }
