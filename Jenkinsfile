@@ -5,3 +5,4 @@ node('docker') {
             sh 'npm --version'
         }
     }
+}
