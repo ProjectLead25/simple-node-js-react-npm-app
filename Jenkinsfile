@@ -1,8 +1,10 @@
-node('docker') {
-    checkout scm
-    stage('Build') {
-        docker.image('node:6.3').inside {
-            sh 'npm --version'
+pipeline {
+    agent { docker { image 'node:6.3' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm --version'
+            }
         }
     }
 }
