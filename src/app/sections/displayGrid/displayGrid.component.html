@@ -1,0 +1,229 @@
+<gridster [options]="options">
+  <gridster-item [item]="item" *ngFor="let item of dashboard">
+      
+    <div *ngIf="this.dashboard.indexOf(item)==0">
+      <h2 style="text-align:center;">Vehicles Details Application</h2>
+    </div>
+ 
+    <div id="div2" *ngIf="this.dashboard.indexOf(item)==1">
+      
+      <button (click)="onClickMe('txtNames')" id="btnSearch" style="width:100%">Search<br /> 
+        <img style="width:100%;height:62px;"
+          [src]="'assets/images/search.png'"></button><br /><br />
+      <button style="width:100%">My Tasks<br /> <img style="width:100%;height:62px;"
+          [src]="'assets/images/tasks.png'"></button><br /><br />
+      <button style="width:100%">Changes<br /> <img style="width:100%;height:62px;"
+          [src]="'assets/images/changes.png'"></button><br /><br />
+      <button style="width:100%">Create<br /> <img style="width:100%;height:62px;" [src]="'assets/images/create.png'"></button><br /><br />
+      <button style="width:100%">Reports<br /> <img style="width:100%;height:62px;" [src]="'assets/images/reports.png'"></button>
+    </div>
+
+    <div id="div3" *ngIf="this.dashboard.indexOf(item)==2" style="text-align:center;">
+      <div style="display: inline-block;">
+      <h3>Search</h3> 
+      <table>
+        <tr><th>Name:</th><td><input id="txtNames" type="text" autofocus></td></tr>
+        <tr><th>Number:</th><td><input id="txtNumbers" type="text"></td></tr>
+        <tr><th>Life Cycle State:</th><td><input id="txtLifes" type="text"></td></tr>
+        <tr><th>Source:</th><td><input id="txtSources" type="text"></td></tr>
+      </table>
+      
+      <button id="btnSearchDashboard" (click)="onClickSearch()"  style="width:100px;height:40px;float:right;">Search</button>
+      <br/>
+      
+
+
+
+
+      
+
+
+<div></div>
+     <br/><br/><br/><br/>
+       <ul id="update" style="border-top:25px"></ul>
+     
+
+    </div>
+    </div>
+
+ <!--  <div id="div3" *ngIf="this.dashboard.indexOf(item)==3">
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>ATTRIBUTES</b>
+       <hr>
+      <table style="display: block;
+      white-space: nowrap;overflow-y:auto;"  *ngFor="let vehData of vehicleData">
+        <tr><th>Heading</th><td>{{vehData.attributes.heading}}</td></tr>
+        <tr><th>Gathering Part</th><td>{{vehData.attributes.gatheringPart}}</td></tr>
+        <tr><th>Source</th><td>{{vehData.attributes.source}}</td></tr>
+        <tr><th>Folder</th><td>{{vehData.attributes.folder}}</td></tr>
+        <tr><th>Material</th><td>{{vehData.attributes.material}}</td></tr>
+        <tr><th>Dimensions</th><td>{{vehData.attributes.dimensions}}</td></tr>
+        <tr><th>Category</th><td>{{vehData.attributes.category}}</td></tr>
+        <tr><th>Sales Code</th><td>{{vehData.attributes.salesCode}}</td></tr>
+        <tr><th>Cage Code</th><td>{{vehData.attributes.cageCode}}</td></tr>
+        <tr><th>Assembly Mode</th><td>{{vehData.attributes.assemblyMode}}</td></tr>
+        <tr><th>View</th><td>{{vehData.attributes.view}}</td></tr>
+        <tr><th>Trace Code</th><td>{{vehData.attributes.traceCode}}</td></tr>
+        <tr><th>Default Unit</th><td>{{vehData.attributes.defaultUnit}}</td></tr>
+        <tr><th>Net Weight</th><td>{{vehData.attributes.netWeight}}</td></tr>
+
+
+      </table>
+        
+         </div>-->
+         <!--<div id="div4" *ngIf="this.dashboard.indexOf(item)==4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>LIFE CYCLE</b>
+           <hr>
+           <table style=" display: block;
+           overflow-x: auto;
+           white-space: nowrap;">
+             <tr><th>Name</th><th>Active</th><th>Display</th>
+             </tr>
+             <tr *ngFor="let vehData of vehicleData">
+                 <td>{{vehData.lifecycle[0].name}}</td>
+                 <td>{{vehData.lifecycle[0].active}}</td>
+                 <td>{{vehData.lifecycle[0].display}}</td>
+             </tr>
+             <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[1].name}}</td>
+                <td>{{vehData.lifecycle[1].active}}</td>
+                <td>{{vehData.lifecycle[1].display}}</td>
+            </tr>
+            <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[2].name}}</td>
+                <td>{{vehData.lifecycle[2].active}}</td>
+                <td>{{vehData.lifecycle[2].display}}</td>
+            </tr>
+            <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[3].name}}</td>
+                <td>{{vehData.lifecycle[3].active}}</td>
+                <td>{{vehData.lifecycle[3].display}}</td>
+            </tr>
+            <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[4].name}}</td>
+                <td>{{vehData.lifecycle[4].active}}</td>
+                <td>{{vehData.lifecycle[4].display}}</td>
+            </tr>
+            <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[5].name}}</td>
+                <td>{{vehData.lifecycle[5].active}}</td>
+                <td>{{vehData.lifecycle[5].display}}</td>
+            </tr>
+            <tr *ngFor="let vehData of vehicleData">
+                <td>{{vehData.lifecycle[6].name}}</td>
+                <td>{{vehData.lifecycle[6].active}}</td>
+                <td>{{vehData.lifecycle[6].display}}</td>
+            </tr>
+           </table>
+            
+             </div>-->
+
+             <!--<div id="div5" *ngIf="this.dashboard.indexOf(item)==5">
+                &nbsp;&nbsp;&nbsp;&nbsp;<b>CHANGES</b>
+            <hr>
+            <table style=" display: block;
+            overflow-x: auto;
+            white-space: nowrap;">
+              <tr><th>Type</th><th>Name</th><th>Number</th><th>Description</th>
+                <th>Comments</th><th>Need Date</th><th>Proposed Solution</th>
+                <th>Impact Safety</th><th>Impact Quality</th><th>Cage Code</th>
+                <th>Category</th><th>Request Priority</th><th>Recurring Cost</th>
+                <th>Non Recurring Cost</th><th colspan="6">Change Notices</th>
+              </tr>
+              <tr *ngFor="let vehData of vehicleData">
+                  <td>{{vehData.changes.changeRequests[0].type}}</td>
+                  <td>{{vehData.changes.changeRequests[0].name}}</td>
+                  <td>{{vehData.changes.changeRequests[0].number}}</td>
+                  <td>Description Data</td>
+                  <td>Comments Data</td>
+                  <td>{{vehData.changes.changeRequests[0].needDate}}</td>
+                  <td>{{vehData.changes.changeRequests[0].proposedSolution}}</td>
+                  <td>{{vehData.changes.changeRequests[0].impactsSafety}}</td>
+                  <td>{{vehData.changes.changeRequests[0].impactsQuality}}</td>
+                  <td>{{vehData.changes.changeRequests[0].cageCode}}</td>
+                  <td>{{vehData.changes.changeRequests[0].category}}</td>
+                  <td>{{vehData.changes.changeRequests[0].requestPriority}}</td>
+                  <td>{{vehData.changes.changeRequests[0].recurringCost}}</td>
+                  <td>{{vehData.changes.changeRequests[0].nonRecurringCost}}</td>
+                  
+                      <th>Name</th>
+                      <th>Number</th>
+                      <th>Description</th>
+                      <th colspan="3">Change Tasks</th>
+              </tr>
+              <tr *ngFor="let vehData of vehicleData">
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].name}}</td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].number}}</td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].description}}</td>
+                  <th>Name</th>
+                  <th>Number</th>
+                  <th>Description</th>
+
+              </tr>
+              <tr *ngFor="let vehData of vehicleData">
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].changeTasks[0].name}}</td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].changeTasks[0].number}}</td>
+                  <td>{{vehData.changes.changeRequests[0].changeNotices[0].changeTasks[0].description}}</td>
+                  
+
+              </tr>
+            </table>
+             
+              </div>-->
+
+    <!--<div id="div6" *ngIf="this.dashboard.indexOf(item)==6">
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>RELATED OBJECTS</b>
+    <hr>
+    <table id="table6" style=" display: block;
+    overflow-x: auto;
+    white-space: nowrap;">
+      <tr><th>Type</th><th>Display</th><th>Name</th><th>Number</th>
+        <th>Version</th><th>Revision</th><th>Iteration</th>
+        <th>Life Cycle State</th><th>Under Change</th><th>Icon</th>
+      </tr>
+      <tr *ngFor="let vehData of vehicleData">
+          <td>{{vehData.relatedObjects[0].type}}</td>
+          <td>{{vehData.relatedObjects[0].display}}</td>
+          <td>{{vehData.relatedObjects[0].name}}</td>
+          <td>{{vehData.relatedObjects[0].number}}</td>
+          <td>{{vehData.relatedObjects[0].version}}</td>
+          <td>{{vehData.relatedObjects[0].revision}}</td>
+          <td>{{vehData.relatedObjects[0].iteration}}</td>
+          <td>{{vehData.relatedObjects[0].lifecycleState}}</td>
+          <td>{{vehData.relatedObjects[0].underChange}}</td>
+          <td><a href="{{vehData.relatedObjects[0].icon}}">{{vehData.relatedObjects[0].icon}}</a></td>
+      </tr>
+      <tr *ngFor="let vehData of vehicleData">
+          <td>{{vehData.relatedObjects[1].type}}</td>
+          <td>{{vehData.relatedObjects[1].display}}</td>
+          <td>{{vehData.relatedObjects[1].name}}</td>
+          <td>{{vehData.relatedObjects[1].number}}</td>
+          <td>{{vehData.relatedObjects[1].version}}</td>
+          <td>{{vehData.relatedObjects[1].revision}}</td>
+          <td>{{vehData.relatedObjects[1].iteration}}</td>
+          <td>{{vehData.relatedObjects[1].lifecycleState}}</td>
+          <td>{{vehData.relatedObjects[1].underChange}}</td>
+          <td><a href="{{vehData.relatedObjects[1].icon}}">{{vehData.relatedObjects[1].icon}}</a></td>
+      </tr>
+      <tr *ngFor="let vehData of vehicleData">
+          <td>{{vehData.relatedObjects[2].type}}</td>
+          <td>{{vehData.relatedObjects[2].display}}</td>
+          <td>{{vehData.relatedObjects[2].name}}</td>
+          <td>{{vehData.relatedObjects[2].number}}</td>
+          <td>{{vehData.relatedObjects[2].version}}</td>
+          <td>{{vehData.relatedObjects[2].revision}}</td>
+          <td>{{vehData.relatedObjects[2].iteration}}</td>
+          <td>{{vehData.relatedObjects[2].lifecycleState}}</td>
+          <td>{{vehData.relatedObjects[2].underChange}}</td>
+          <td><a href="{{vehData.relatedObjects[2].icon}}">{{vehData.relatedObjects[2].icon}}</a></td>
+      </tr>
+    </table>
+     
+      </div> -->
+
+
+  </gridster-item>
+</gridster>

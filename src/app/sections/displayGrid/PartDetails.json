@@ -1,0 +1,138 @@
+[{
+	"name": "7-INCH T-JOINT",
+	"number": "320040004",
+	"version": "1.2",
+	"revision": "1",
+	"iteration": "2",
+	"lifecycleState": "UNDER REVIEW",
+	"lifecycle": [
+		{
+			"name": "OPEN",
+			"active": "false",
+			"display": "Open"
+		},
+		{
+			"name": "IN WORK",
+			"active": "false",
+			"display": "In Work"
+		},
+		{
+			"name": "UNDER REVIEW",
+			"active": "true",
+			"display": "Under Review"
+		},
+		{
+			"name": "PROTOTYPE",
+			"active": "false",
+			"display": "Prototype"
+		},
+		{
+			"name": "PREPRODUCTION",
+			"active": "false",
+			"display": "Pre-Production"
+		},
+		{
+			"name": "RELEASED",
+			"active": "false",
+			"display": "Released"
+		},
+		{
+			"name": "OBSOLETE",
+			"active": "false",
+			"display": "Obsolete"
+		}
+	],
+	"attributes": {
+		"heading": "Attributes",
+		"gatheringPart": "No",
+		"source": "Make",
+		"folder": "2033S Cooling Systems/Parts",
+		"material": "C23000",
+		"dimensions": "7InchX1/8Inch",
+		"category": "Pipes and Tubes",
+		"salesCode": "P402044",
+		"cageCode": "DECC94949",
+		"assemblyMode": "Component",
+		"view": "Design",
+		"traceCode": "Untraced",
+		"defaultUnit": "each",
+		"netWeight": "212"
+	},
+	"viewables": {
+		"pvz": "https://hostname/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR:wt.pdmlink.PDMLinkProduct:3337021&oid=OR:wt.doc.EPMDocument:3337800&fileName=320040004.pvz",
+		"pdf": "https://hostname/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR:wt.pdmlink.PDMLinkProduct:3337021&oid=OR:wt.doc.EPMDocument:3337800&fileName=320040004.pdf"
+	},
+	"changes": {
+		"changeRequests": [
+			{
+				"type": "wt.change2.WTChangeRequest2|com.agilecentral.ACChangeRequest",
+				"name": "Cooling System Cost Reduction",
+				"number": "1200008",
+				"description": "",
+				"comments": "",
+				"needDate": "03-14-2020 12:00:00 GMT",
+				"proposedSolution": "Update material tolerances based on requirements and relax specifications for non-critical components",
+				"impactsSafety": "false",
+				"impactsQuality": "true",
+				"cageCode": "DECC94949",
+				"category": "PMO",
+				"requestPriority": "Planned, Routine",
+				"recurringCost": "10000",
+				"nonRecurringCost": "400000",
+				"changeNotices": [
+					{
+						"name": "Update Cooling System tolerances",
+						"number": "2000049",
+						"description": "Update Cooling System tolerances and relax specs for tubes",
+						"changeTasks": [
+							{
+								"name": "Update 7Inch T-Joint",
+								"number": "3000083",
+								"description": "Update T-Joints tolerances and relax specs for tubes"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"relatedObjects": [
+		{
+			"type":"wt.part.WTPart|com.agilecentral.ACPart",
+			"display": "Part",
+			"name": "9Inch Tube",
+			"number": "230493024",
+			"version": "3.9",
+			"revision": "3",
+			"iteration": "9",
+			"lifecycleState": "Released",
+			"underChange": "true",
+			"icon": "https://hostname/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR:wt.pdmlink.PDMLinkProduct:3337021&oid=OR:wt.part.WTPart:3337987&icon=partIcon.jpg"
+		},
+		{
+			"type":"wt.part.WTPart|com.agilecentral.ACPart",
+			"display": "Part",
+			"name": "22Inch Tube",
+			"number": "230493139",
+			"version": "7.1",
+			"revision": "7",
+			"iteration": "1",
+			"lifecycleState": "Released",
+			"underChange": "true",
+			"icon": "https://hostname/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR:wt.pdmlink.PDMLinkProduct:3337021&oid=OR:wt.part.WTPart:3337800&icon=partIcon.jpg"
+		},
+		{
+			"type":"wt.doc.WTDocument|com.agilecentral.ACDocument",
+			"display": "Document",
+			"name": "Cooling Tube Spec",
+			"number": "1000049",
+			"version": "3.5",
+			"revision": "3",
+			"iteration": "5",
+			"lifecycleState": "Released",
+			"underChange": "true",
+			"icon": "https://hostname/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR:wt.pdmlink.PDMLinkProduct:3337021&oid=OR:wt.doc.WTDocument:10044999&icon=docIcon.jpg"
+		}		
+	]
+}
+]

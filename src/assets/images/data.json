@@ -1,0 +1,5 @@
+[
+    {"Name":"john","Image":"assets/images/john.png","Location":"Canada"},
+    {"Name":"mary","Image":"assets/images/mary.png","Location":"Australia"},
+    {"Name":"mark","Image":"assets/images/mark.png","Location":"UK"}
+    ]
