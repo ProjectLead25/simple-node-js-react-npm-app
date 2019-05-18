@@ -1,9 +1,10 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent any
+    environment { PATH = 'C:\Program Files\nodejs\node_modules\npm\bin'}
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'npm install'
             }
         }
     }
