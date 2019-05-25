@@ -9,7 +9,7 @@ pipeline {
                 bat 'node --version'
                 bat 'npm install -g @angular/cli'
                 bat 'npm run ng -- build'
-              echo 'build job completed successfully'
+              echo 'build job completed successfully.'
                   }
         }
 
