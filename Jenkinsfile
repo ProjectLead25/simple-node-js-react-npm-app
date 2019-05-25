@@ -12,12 +12,7 @@ pipeline {
               echo 'build job completed'
                   }
         }
-      stage('test'){
-        steps {
-        bat 'npm test'
-          echo 'npm test job completed'
-        }
-      }
+      
 
    }
   post
