@@ -14,4 +14,15 @@ pipeline {
         }
 
    }
+  post
+  {
+      success {
+      mail (from: 'rakeshrapalli98@gmail.com', to: 'rakeshrapalli90@gmail.com', subject: 'The Pipeline is Success :(', body: 'Code has no bugs');
+      }
+      
+      failure {
+      mail (from: 'rakeshrapalli98@gmail.com', to: 'rakeshrapalli90@gmail.com', subject: 'The Pipeline failed :(', body: 'Check the code for errors.');
+      }
+      
+  }
 }
