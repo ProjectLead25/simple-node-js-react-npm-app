@@ -10,7 +10,11 @@ pipeline {
                 bat 'npm install -g @angular/cli'
                 bat 'npm run ng -- build'
               echo 'build job completed successfully'
-             
+               bat 'cd C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef'
+        
+    bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
+              bat 'cd Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%'
+              bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%" /mir'      
                   }
         }
       
@@ -19,14 +23,14 @@ pipeline {
   post
   {
       success {
-      bat 'cd C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef'
+    //  bat 'cd C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef'
         
-    bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
+  //  bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
   //      bat 'type nul > hello.text'
-bat 'cd Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%'
+//bat 'cd Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%'
   //      bat 'type nul > hello.text'
 //bat 'echo "xcopy /C/Program Files (x86)/Jenkins/workspace/AngularJenkins_feature Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
- bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%" /mir'      
+// bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%" /mir'      
 //bat "xcopy C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature " 
 //C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"
         
