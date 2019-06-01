@@ -10,9 +10,7 @@ pipeline {
                 bat 'npm install -g @angular/cli'
                 bat 'npm run ng -- build'
               echo 'build job completed successfully'
-              MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"
-      cd "%BUILD_NUMBER%_%date:~10,4%%date:~4,2%%date:~7,2%"
-      type nul > hello.text
+             
                   }
         }
       
