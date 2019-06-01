@@ -26,7 +26,7 @@ pipeline {
 bat 'cd Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%'
   //      bat 'type nul > hello.text'
 //bat 'echo "xcopy /C/Program Files (x86)/Jenkins/workspace/AngularJenkins_feature Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
- bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" /mir'      
+ bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%" /mir'      
 //bat "xcopy C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature " 
 //C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"
         
