@@ -19,7 +19,7 @@ pipeline {
   post
   {
       success {
-        bat 'echo "cd C:\Users\rajaiah\OneDrive\Desktop\New folder (6)"'
+        bat 'echo "cd C/Users/rajaiah/OneDrive/Desktop/New folder (6)"'
      bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
 bat 'echo "cd "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
 bat 'echo "xcopy C:\Program Files (x86)\Jenkins\workspace\AngularJenkins_feature Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
