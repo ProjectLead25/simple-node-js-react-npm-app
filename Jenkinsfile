@@ -19,7 +19,7 @@ pipeline {
   post
   {
       success {
-        bat 'echo "cd /C/Users/rajaiah/OneDrive/Desktop/New folder (6)"'
+        bat 'start cmd.exe /c C:\\Users\\rajaiah\\OneDrive\\Desktop\\New folder (6)'
         
      bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
         bat 'type nul > hello.text'
