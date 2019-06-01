@@ -14,7 +14,7 @@ pipeline {
         
     bat 'MD "Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'
               bat 'cd Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%'
-              bat 'ROBOCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%" /mir'      
+              bat 'XCOPY "C:\\Program Files (x86)\\Jenkins\\workspace\\AngularJenkins_feature" "C:\\Users\\rajaiah\\OneDrive\\Desktop\\abcdef\\Build_Number_%BUILD_NUMBER%_Year_%date:~10,4%_Month_%date:~4,2%_Date_%date:~7,2%"'      
                   }
         }
       
