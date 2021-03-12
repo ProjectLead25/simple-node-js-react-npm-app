@@ -45,7 +45,7 @@
     "@angular/common": "^7.2.11",
     "angular-gridster2": "^7.1.0",
     "jquery": "^3.3.1",
-    "jspdf": "^1.5.3"
+    "jspdf": "^2.3.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.1",
